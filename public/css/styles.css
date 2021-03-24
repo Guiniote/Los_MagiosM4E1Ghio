@@ -1,10 +1,12 @@
 * {
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-    font-family: 'Roboto';
-    margin: 0px;    
+    font-family: 'Roboto';        
+    background-color: #ebebeb; 
 }
 
 header {
@@ -37,6 +39,11 @@ header {
         text-decoration: none;
     }
 
+        .site_navbar a, .login_navbar a {
+            text-decoration: none;
+            color: #03264C;
+        }
+
     .burger-menu {
         text-align: center;
     }
@@ -53,60 +60,79 @@ header {
 
 
 main {
-    background-color: #ebebeb;    
+    margin: auto;
+    width: 90%;    
 }
 
-    .divmain {
-        margin: auto;
-        width: 90%;    
+    section {
+        font-size: 24px;
     }
 
-        section {
-            font-size: 24px;
+        article {
+            font-size: 16px;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
-            article {
-                font-size: 16px;
-                margin-top: 10px;
-                margin-bottom: 10px;
+            .imagen {
+                background-color: white;
             }
 
-                .infoart {
-                    background-color: white;
-                    border-top: 1px solid #ebebeb;
-                    padding: 15px;
-                }
+            .camion {
+                background-color: white;
+                height: 0px;
+            }
 
-                .fa-truck {
-                    color: #39b54a;
-                    padding: 10px 8px;
-                    border: 1px solid #39b54a;
-                    border-radius: 70px;
-                }
+            .fa-truck {
+                color: #39b54a;
+                padding: 8px 6px;
+                border: 1px solid #39b54a;
+                border-radius: 50%;
+                position: relative;
+                left: 85%;
+                top: -17px;           
+            }
 
-                .precio {
-                    font-size: 18px;
-                    margin-top: 0px;
-                    margin-bottom: 0px;
-                }
+            .infoart {
+                background-color: white;
+                border-top: 1px solid #ebebeb;
+                padding: 15px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: flex-end;
+            }
+            
+            .precio {
+                font-size: 18px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                flex: 1 1 30%;
+            }
 
-                .descuentos {
-                    color: #39b54a;
-                    margin-top: 0px;
-                    margin-bottom: 0px;
-                }
-                
-                .descripciones {
-                    display: none;
-                    font-weight: bold;                    
-                }
+            .descuentos {
+                color: #39b54a;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                flex: 1 1 70%;
+            }
+            
+            .descripciones {
+                display: none;
+                flex: 1 1 100%;
+                font-weight: bold;
+                text-align: left;
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
 
 
 
 footer {
     text-align: center;
     color: #666;
-    font-size: 10px
+    font-size: 10px;
+    background-color: white; 
 }
 
     .titulosfooter {
