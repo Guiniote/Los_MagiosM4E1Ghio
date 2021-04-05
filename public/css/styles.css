@@ -177,8 +177,7 @@ body {
                             margin-bottom: 12px;                            
                         }
 
-                        main section article:hover p.descripciones {
-                            /*background-color: red;*/
+                        main section article:hover p.descripciones {                            
                             display: block;                            
                         }
 
@@ -344,7 +343,13 @@ body {
                     justify-content: flex-end;                    
                 }
 
-                
+                    .site_navbar li {
+                        margin: 0px 7px;
+                    }
+
+                    .login_navbar li {
+                        margin: 0px 7px;   
+                    }
 
         
 
