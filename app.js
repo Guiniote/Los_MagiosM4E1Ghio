@@ -17,6 +17,10 @@ app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/login.html'));
 });
 
-app.listen (3000, () => {
+app.listen (/*puerto || */3000, () => {
     console.log('Servidor levantado en el puerto 3000');
 });
+
+
+
+//const puerto = process.env.port;

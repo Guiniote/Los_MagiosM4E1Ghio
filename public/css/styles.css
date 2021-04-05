@@ -35,20 +35,22 @@ body {
                 padding-left: 10px;
                 display: flex;
                 flex-flow: row wrap;
+                align-items: baseline;
             }
 
+                .buscador button {
+                    width: 15%;
+                }
+            
                 .boxbuscador {
-                    /*flex: 1 1 auto;*/
-                    width: 90%;
+                    width: 83%;
+                    height: 22px;
                 }
 
                 .fa-search {
                     padding: 1px;
                     padding-top: 3px;
-                    background-color: #ebebeb;
-                    border: 1px solid #666;
-                    /*flex: 1 1 auto;*/
-                    width: 10%;
+                    background-color: #ebebeb;                    
                 }
 
             #lema {
@@ -58,21 +60,22 @@ body {
                 text-align: center;
                 padding-left: 10px;
             }
-
-        .site_navbar {
-            display: none;
-            text-decoration: none;
-        }
-
-        .login_navbar {
-            display: none;
-            text-decoration: none;
-        }
-
-            .site_navbar a, .login_navbar a {
+        
+        
+            .site_navbar {
+                display: none;
                 text-decoration: none;
-                color: #03264C;
             }
+
+            .login_navbar {
+                display: none;
+                text-decoration: none;
+            }
+
+                .site_navbar a, .login_navbar a {
+                    text-decoration: none;
+                    color: #03264C;
+                }
 
         .burger-menu {
             text-align: center;
@@ -129,7 +132,7 @@ body {
                         flex-wrap: wrap;
                         justify-content: space-around;
                         /*align-items: flex-end;*/
-                        align-items: baseline;
+                        
                         position: relative;
                     }
                     
@@ -316,13 +319,34 @@ body {
             width: 33%;
         }
 
-        .site_navbar {
-            display: block;
+        .menues {
+            display: flex;
+            flex-flow: row wrap;            
         }
+        
+            .site_navbar {
+                width: 48%;                
+            }
 
-        .login_navbar {
-            display: block;
-        }
+            .login_navbar {
+                width: 48%;                
+            }    
+        
+                .site_navbar ul {
+                    display: flex;
+                    flex-flow: row wrap; 
+                    justify-content: flex-start;                   
+                }
+
+                .login_navbar ul {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: flex-end;                    
+                }
+
+                
+
+        
 
         .burger-menu {
             display: none;
