@@ -9,214 +9,278 @@ body {
     background-color: #ebebeb; 
 }
 
-header {
-    background-color: #EAC926;
-    color: #03264C;
-    font-size: 12px;
-}
-
-    .encabezado {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        padding: 20px;
+    header {
+        background-color: #EAC926;
+        color: #03264C;
+        font-size: 12px;
     }
 
-        .logo {
-            /*flex: 1 1 45%;*/
-            width: 50%;
-        }
-
-        .buscador {
-            /*flex: 1 1 45%;*/
-            width: 50%;
-            margin: auto;
-            text-align: center;
-            padding-left: 10px;
+        .encabezado {
             display: flex;
             flex-flow: row wrap;
+            justify-content: space-evenly;
+            padding: 20px;
         }
 
-            .boxbuscador {
-                /*flex: 1 1 auto;*/
-                width: 90%;
+            .logo {
+                /*flex: 1 1 45%;*/
+                width: 50%;
             }
 
-            .fa-search {
-                padding: 1px;
-                padding-top: 3px;
-                background-color: #ebebeb;
-                border: 1px solid #666;
-                /*flex: 1 1 auto;*/
-                width: 10%;
+            .buscador {
+                /*flex: 1 1 45%;*/
+                width: 50%;
+                margin: auto;
+                text-align: center;
+                padding-left: 10px;
+                display: flex;
+                flex-flow: row wrap;
             }
 
-        #lema {
-            text-align: center;
-            flex: 1 1 auto;
-            margin: auto;
-            text-align: center;
-            padding-left: 10px;
-        }
+                .boxbuscador {
+                    /*flex: 1 1 auto;*/
+                    width: 90%;
+                }
 
-    .site_navbar {
-        display: none;
-        text-decoration: none;
-    }
+                .fa-search {
+                    padding: 1px;
+                    padding-top: 3px;
+                    background-color: #ebebeb;
+                    border: 1px solid #666;
+                    /*flex: 1 1 auto;*/
+                    width: 10%;
+                }
 
-    .login_navbar {
-        display: none;
-        text-decoration: none;
-    }
+            #lema {
+                text-align: center;
+                flex: 1 1 auto;
+                margin: auto;
+                text-align: center;
+                padding-left: 10px;
+            }
 
-        .site_navbar a, .login_navbar a {
+        .site_navbar {
+            display: none;
             text-decoration: none;
-            color: #03264C;
         }
 
-    .burger-menu {
-        text-align: center;
-    }
-
-    .fa-bars {
-        font-size: 20px;
-        background-color: #1259c3;
-        color: white;
-        padding: 5px;
-        border: 0.5px solid #1259c3;
-        border-radius: 5px;
-    }
-
-
-
-main {
-    margin: auto;
-    width: 90%;    
-}
-
-    section {
-        font-size: 24px;        
-    }
-
-        .titulares {
-            padding-top: 24px;
-            padding-bottom: 8px;
+        .login_navbar {
+            display: none;
+            text-decoration: none;
         }
 
-        .contenido {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: stretch;
-        }
-
-            article {
-                font-size: 16px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-                background-color: white;                
+            .site_navbar a, .login_navbar a {
+                text-decoration: none;
+                color: #03264C;
             }
 
-                .imagen {
-                    background-color: white;
+        .burger-menu {
+            text-align: center;
+        }
+
+        .fa-bars {
+            font-size: 20px;
+            background-color: #1259c3;
+            color: white;
+            padding: 5px;
+            border: 0.5px solid #1259c3;
+            border-radius: 5px;
+        }
+
+
+
+    main {
+        margin: auto;
+        width: 90%;    
+    }
+
+        section {
+            font-size: 24px;        
+        }
+
+            .titulares {
+                padding-top: 24px;
+                padding-bottom: 8px;
+            }
+
+            .contenido {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: stretch;
+            }
+
+                article {
+                    font-size: 16px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    background-color: white;                
                 }
 
-                .infoart {
-                    border-top: 1px solid #ebebeb;
-                    padding: 6%;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-around;
-                    /*align-items: flex-end;*/
-                    align-items: baseline;
-                    position: relative;
-                }
-                
-                    .camion {
+                    .imagen {
                         background-color: white;
-                        height: 0px;
                     }
 
-                    .fa-truck {
-                        color: #39b54a;
-                        padding: 8px 6px;
-                        border: 1px solid #39b54a;
-                        border-radius: 50%;
-                        position: absolute;
-                        right: 7%;
-                        top: -17px;           
-                    }
-
-                    .precio {
-                        font-size: 18px;
-                        margin-top: 5px;
-                        margin-bottom: 5px;
-                        /*flex: 1 1 30%;*/
-                        width: 30%;
-                    }
-
-                    .descuentos {
-                        color: #39b54a;
-                        margin-top: 5px;
-                        margin-bottom: 5px;
-                        /*flex: 1 1 70%;*/
-                        width: 70%;
+                    .infoart {
+                        border-top: 1px solid #ebebeb;
+                        padding: 6%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                        /*align-items: flex-end;*/
+                        align-items: baseline;
+                        position: relative;
                     }
                     
-                    .descripciones {
-                        display: none;
-                        flex: 1 1 100%;
-                        color: #666;
-                        font-weight: bold;
-                        text-align: left;
-                        margin-top: 12px;
-                        margin-bottom: 12px;
-                    }
+                        .camion {
+                            background-color: white;
+                            height: 0px;
+                        }
+
+                        .fa-truck {
+                            color: #39b54a;
+                            padding: 8px 6px;
+                            border: 1px solid #39b54a;
+                            border-radius: 50%;
+                            position: absolute;
+                            right: 7%;
+                            top: -17px;           
+                        }
+
+                        .precio {
+                            font-size: 18px;
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                            /*flex: 1 1 30%;*/
+                            width: 30%;
+                        }
+
+                        .descuentos {
+                            color: #39b54a;
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                            /*flex: 1 1 70%;*/
+                            width: 70%;
+                        }
+                        
+                        .descripciones {
+                            display: none;
+                            flex: 1 1 100%;
+                            color: #666;
+                            font-weight: bold;
+                            text-align: left;
+                            margin-top: 12px;
+                            margin-bottom: 12px;
+                        }
+
+    
+        .register, .login {
+            margin-top: 20px;
+        }
+
+            .register .campo, .login .campo {
+                display: flex;
+                padding: 5px;
+                align-items: baseline;
+            }
+
+                .register .campo input, .login .campo input {
+                    margin-left: 5px;                
+                    width: 53%;                                
+                }
+
+                .register .campo label, .login .campo label {
+                    font-size: 14px;
+                    width: 45%;
+                }
+            
+            .register .campo_foto {
+                padding: 5px;
+                align-items: baseline;
+            }
+
+                .register .campo_foto input {
+                    width: 100%;   
+                    margin-top: 5px;                             
+                    margin-bottom: 10px;                             
+                }
+
+                .register .campo_foto label {
+                    font-size: 14px;
+                    width: 100%;                    
+                }
+
+            .register .campo_categorias {
+                padding: 5px;
+                font-size: 14px;
+            }
+
+                .register .opcion {
+                    display: block;
+                    align-items: flex-end;
+                    padding: 3px;
+                    margin-left: 170px;
+                }
+
+                .register .opcion_radio {
+                    display: block;
+                    align-items: flex-end;
+                    text-align: center;
+                    margin-right: 10px;
+                }
+
+            .register .botones, .login .botones {
+                text-align: center;                        
+            }
+            
+                .register .botones button, .login .botones button {
+                    padding: 2px;
+                    margin: 20px;                        
+                }
 
 
-
-footer {
-    text-align: center;
-    color: #666;
-    font-size: 10px;
-    background-color: white; 
-}
-
-    .titulosfooter {
-        font-weight: bold;
-        font-size: 14px;
-        margin-bottom: 0px;
-        margin-top: 2px;
+    footer {
+        text-align: center;
+        color: #666;
+        font-size: 10px;
+        background-color: white; 
     }
 
-    .textofooter {
-        margin-top: 1px;
-        margin-left: 60px;
-        margin-right: 60px;
-    }
+        .titulosfooter {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 0px;
+            margin-top: 2px;
+        }
 
-    .fa-credit-card {
-        color: #1259c3;
-        font-size: 2em;
-        margin-bottom: 10px;
-    }
+        .textofooter {
+            margin-top: 1px;
+            margin-left: 60px;
+            margin-right: 60px;
+        }
 
-    .fa-gift {
-        color: #1259c3;
-        font-size: 2em;
-        margin-bottom: 10px;
-    }
+        .fa-credit-card {
+            color: #1259c3;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
 
-    .fa-user-shield {
-        color: #1259c3;
-        font-size: 2em;
-        margin-bottom: 10px;
-    }
+        .fa-gift {
+            color: #1259c3;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
 
-    #copy {
-        text-align: left;
-        font-size: 9px;        
-    }
+        .fa-user-shield {
+            color: #1259c3;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        #copy {
+            text-align: left;
+            font-size: 9px;        
+        }
 
 
 
