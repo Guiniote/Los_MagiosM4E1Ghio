@@ -114,7 +114,8 @@ body {
                     font-size: 16px;
                     margin-top: 10px;
                     margin-bottom: 10px;
-                    background-color: white;                
+                    background-color: white;   
+                    transition: box-shadow 300ms;             
                 }
 
                     .imagen {
@@ -170,7 +171,16 @@ body {
                             font-weight: bold;
                             text-align: left;
                             margin-top: 12px;
-                            margin-bottom: 12px;
+                            margin-bottom: 12px;                            
+                        }
+
+                        main section article:hover p.descripciones {
+                            /*background-color: red;*/
+                            display: block;                            
+                        }
+
+                        article:hover {
+                            box-shadow: 0px 0px 10px rgb(100,100,100);
                         }
 
     
@@ -235,7 +245,12 @@ body {
             
                 .register .botones button, .login .botones button {
                     padding: 2px;
-                    margin: 20px;                        
+                    margin: 20px;                                            
+                }
+
+                .login .botones button:hover {
+                    background-color: #0022AA;
+                    color: white;
                 }
 
 
@@ -244,6 +259,10 @@ body {
         color: #666;
         font-size: 10px;
         background-color: white; 
+    }
+
+    footer .item {
+        padding-top: 25px;
     }
 
         .titulosfooter {
@@ -263,23 +282,31 @@ body {
             color: #1259c3;
             font-size: 2em;
             margin-bottom: 10px;
+            transition: color 100ms;
         }
 
         .fa-gift {
             color: #1259c3;
             font-size: 2em;
             margin-bottom: 10px;
+            transition: color 100ms;
         }
 
         .fa-user-shield {
             color: #1259c3;
             font-size: 2em;
             margin-bottom: 10px;
+            transition: color 100ms;
         }
 
         #copy {
             text-align: left;
-            font-size: 9px;        
+            font-size: 9px;
+            padding: 30px 15px 10px 15px;        
+        }
+
+        .fa-credit-card:hover, .fa-gift:hover, .fa-user-shield:hover {
+            color: #39b54a;
         }
 
 
@@ -302,11 +329,24 @@ body {
         }
 
     article {
-        box-shadow: 0px 0px 10px rgb(100,100,100);
+        /*box-shadow: 0px 0px 10px rgb(100,100,100); Descartadas por consigna nueva */
         flex: 0 1 45%;
     }
-        .descripciones {
+        /*.descripciones {
             display: block;
+        } Descartadas por consigna nueva */
+
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+        footer .item {            
+            width: 32%;
+        }
+
+        #copy {
+            flex: 1 1 100%;
         }
 }
 
@@ -324,7 +364,7 @@ body {
         }
 
     article {
-        box-shadow: 0px 0px 10px rgb(100,100,100);
+        /*box-shadow: 0px 0px 10px rgb(100,100,100); Descartadas por consigna nueva */
         flex: 0 1 20%;
     }
 }
