@@ -15,19 +15,49 @@ header {
     font-size: 12px;
 }
 
-    .buscador {
-        margin-left: 15px;
+    .encabezado {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        padding: 20px;
     }
 
-    .fa-search {
-        padding: 3px;
-        background-color: #ebebeb;
-        border: 1px solid #666;
-    }
+        .logo {
+            /*flex: 1 1 45%;*/
+            width: 50%;
+        }
 
-    #lema {
-        text-align: center;
-    }
+        .buscador {
+            /*flex: 1 1 45%;*/
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            padding-left: 10px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+            .boxbuscador {
+                /*flex: 1 1 auto;*/
+                width: 90%;
+            }
+
+            .fa-search {
+                padding: 1px;
+                padding-top: 3px;
+                background-color: #ebebeb;
+                border: 1px solid #666;
+                /*flex: 1 1 auto;*/
+                width: 10%;
+            }
+
+        #lema {
+            text-align: center;
+            flex: 1 1 auto;
+            margin: auto;
+            text-align: center;
+            padding-left: 10px;
+        }
 
     .site_navbar {
         display: none;
@@ -65,11 +95,7 @@ main {
 }
 
     section {
-        font-size: 24px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: stretch;
+        font-size: 24px;        
     }
 
         .titulares {
@@ -77,66 +103,75 @@ main {
             padding-bottom: 8px;
         }
 
-        article {
-            font-size: 16px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            padding-left: 5%;
-            padding-right: 5%;
+        .contenido {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: stretch;
         }
 
-            .imagen {
-                background-color: white;
+            article {
+                font-size: 16px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: white;                
             }
 
-            .camion {
-                background-color: white;
-                height: 0px;
-            }
+                .imagen {
+                    background-color: white;
+                }
 
-            .fa-truck {
-                color: #39b54a;
-                padding: 8px 6px;
-                border: 1px solid #39b54a;
-                border-radius: 50%;
-                position: relative;
-                left: 85%;
-                top: -17px;           
-            }
+                .infoart {
+                    border-top: 1px solid #ebebeb;
+                    padding: 6%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    /*align-items: flex-end;*/
+                    align-items: baseline;
+                    position: relative;
+                }
+                
+                    .camion {
+                        background-color: white;
+                        height: 0px;
+                    }
 
-            .infoart {
-                background-color: white;
-                border-top: 1px solid #ebebeb;
-                padding: 15px;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                align-items: flex-end;
-            }
-            
-            .precio {
-                font-size: 18px;
-                margin-top: 5px;
-                margin-bottom: 5px;
-                flex: 1 1 30%;
-            }
+                    .fa-truck {
+                        color: #39b54a;
+                        padding: 8px 6px;
+                        border: 1px solid #39b54a;
+                        border-radius: 50%;
+                        position: absolute;
+                        right: 7%;
+                        top: -17px;           
+                    }
 
-            .descuentos {
-                color: #39b54a;
-                margin-top: 5px;
-                margin-bottom: 5px;
-                flex: 1 1 70%;
-            }
-            
-            .descripciones {
-                display: none;
-                flex: 1 1 100%;
-                color: #666;
-                font-weight: bold;
-                text-align: left;
-                margin-top: 12px;
-                margin-bottom: 12px;
-            }
+                    .precio {
+                        font-size: 18px;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        /*flex: 1 1 30%;*/
+                        width: 30%;
+                    }
+
+                    .descuentos {
+                        color: #39b54a;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        /*flex: 1 1 70%;*/
+                        width: 70%;
+                    }
+                    
+                    .descripciones {
+                        display: none;
+                        flex: 1 1 100%;
+                        color: #666;
+                        font-weight: bold;
+                        text-align: left;
+                        margin-top: 12px;
+                        margin-bottom: 12px;
+                    }
 
 
 
@@ -186,6 +221,10 @@ footer {
 
 
 @media (min-width: 361px) {
+        .buscador, .logo, #lema {
+            width: 33%;
+        }
+
         .site_navbar {
             display: block;
         }
@@ -200,7 +239,7 @@ footer {
 
     article {
         box-shadow: 0px 0px 10px rgb(100,100,100);
-        flex: 1 1 30%;
+        flex: 0 1 45%;
     }
         .descripciones {
             display: block;
@@ -222,5 +261,6 @@ footer {
 
     article {
         box-shadow: 0px 0px 10px rgb(100,100,100);
+        flex: 0 1 20%;
     }
 }
