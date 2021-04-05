@@ -60,7 +60,6 @@ body {
                 margin: auto;
                 text-align: center;
                 padding-left: 10px;
-                justify-self: flex-end;
             }
         
         
@@ -320,6 +319,10 @@ body {
             width: 33%;
         }
 
+        #lema {
+            text-align: right;
+        }
+
         .menues {
             display: flex;
             flex-flow: row wrap;            
@@ -352,6 +355,8 @@ body {
                     .login_navbar li {
                         margin: 0px 7px;   
                     }
+
+             
 
         
 
