@@ -16,27 +16,33 @@
             <div class="logo">
                 <img src = "/images/logo-mercado-liebre.svg" alt = "Logo MercadoLiebre" width="100%">
             </div>
+            
             <div class="buscador">
+                <form action="" method="post">
                 <input type="text" placeholder="Buscar productos, marcas" class = "boxbuscador">
-                <i class="fas fa-search"></i>
+                <button type="button"><i class="fas fa-search"></i></button>
+            </form>
             </div>
+            
             <p id="lema"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
-        <nav class="site_navbar">
-            <ul type = "none">
-                <li><a href = "" target = "_blank">Ofertas</a></li>
-                <li><a href = "" target = "_blank">Tiendas Oficiales</a></li>
-                <li><a href = "" target = "_blank">Vender</a></li>
-                <li><a href = "" target = "_blank">Ayuda</a></li>
-            </ul>
-        </nav>
-        <nav class="login_navbar">
-            <ul type = "none">
-                <li><a href = "" target = "_blank">Creá tu cuenta </a><i class="far fa-id-card"></i></li>
-                <li><a href = "" target = "_blank">Ingresá </a><i class="fas fa-sign-in-alt"></i></li>
-                <li><a href = "" target = "_blank">Mis compras </a><i class="fas fa-shopping-basket"></i></li>
-            </ul>
-        </nav>
+        <div class="menues">
+            <nav class="site_navbar">
+                <ul type = "none">
+                    <li><a href = "" target = "_blank">Ofertas</a></li>
+                    <li><a href = "" target = "_blank">Tiendas Oficiales</a></li>
+                    <li><a href = "" target = "_blank">Vender</a></li>
+                    <li><a href = "" target = "_blank">Ayuda</a></li>
+                </ul>
+            </nav>
+            <nav class="login_navbar">
+                <ul type = "none">
+                    <li><a href = "/register">Creá tu cuenta </a><i class="far fa-id-card"></i></li>
+                    <li><a href = "/login">Ingresá </a><i class="fas fa-sign-in-alt"></i></li>
+                    <li><a href = "" target = "_blank">Mis compras </a><i class="fas fa-shopping-basket"></i></li>
+                </ul>
+            </nav>
+        </div>
         <br>
         <div class = "burger-menu">
             <i class = "fa fa-bars burger"></i>
@@ -47,20 +53,20 @@
     
     
     <main class="register">
-        <form action="" method="POST">
+        <form action="/" method="POST">
             <div class="campo">
                 <label for="nombre">Nombre y apellido</label>
-                <input type="text" name="nombre_apellido" id="nombre">
+                <input type="text" name="nombre_apellido" id="nombre" required>
                 <span class="feedback"></span>
             </div>
             <div class="campo">
                 <label for="mail">e-mail</label>
-                <input type="email" name="mail" id="mail" placeholder="tunombre@ejemplo.com">
+                <input type="email" name="mail" id="mail" placeholder="tunombre@ejemplo.com" required>
                 <span class="feedback"></span>
             </div>
                 <div class="campo">
                 <label for="usuario">Nombre de usuario</label>
-                <input type="text" name="usuario" id="usuario">
+                <input type="text" name="usuario" id="usuario" required>
                 <span class="feedback"></span>
             </div>
                 <div class="campo">
@@ -75,11 +81,11 @@
                 <div class="campo">
                 <label>Perfil de usuario</label>
                 <div class="opcion_radio">
-                    <input type="radio" name="tipo_usuario" id="comprador" value="c">
+                    <input type="radio" name="tipo_usuario" id="comprador" value="c" required>
                     <label for="comprador">Comprador</label>
                 </div>
                 <div class="opcion_radio">
-                    <input type="radio" name="tipo_usuario" id="vendedor" value="v">
+                    <input type="radio" name="tipo_usuario" id="vendedor" value="v" required>
                     <label for="vendedor">Vendedor</label>
                 </div>
             </div>
@@ -113,12 +119,12 @@
             </div>
                 <div class="campo">
                 <label for="pass">Contraseña</label>
-                <input type="password" id="pass">
+                <input type="password" id="pass" minlength="8" required>
                 <span class="feedback"></span>
             </div>
                 <div class="campo">
                 <label for="passconf">Confirmar contraseña</label>
-                <input type="password" name="pass" id="passconf">
+                <input type="password" name="pass" id="passconf" minlength="8" required>
                 <span class="feedback"></span>
             </div>
             <div class="botones">            
@@ -127,5 +133,24 @@
             </div>
         </form>
     </main>
+    <footer>
+        <div class="item">
+            <i class="fas fa-credit-card"></i>
+            <p class="titulosfooter">Pagá con tarjeta o en efectivo</p>
+            <p class="textofooter">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </div>
+        <div class="item">
+            <i class="fas fa-gift"></i>
+            <p class="titulosfooter">Envío gratis desde $ 2.500</p>
+            <p class="textofooter">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+        </div>
+        <div class="item">
+            <i class="fas fa-user-shield"></i>
+            <p class="titulosfooter">Seguridad, de principio a fin</p>
+            <p class="textofooter">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
+        </div>        
+        <p id="copy">Copyright © 2021 MercadoLiebre S.R.L.</p>
+
+    </footer>
 </body>
 </html>
